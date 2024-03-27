@@ -61,7 +61,15 @@ We can add a chart:
   yAxis="temperature"
 />
 
-Hide code
+LINE CHART URL
+
+<PlotlyLineChart
+  url="./data.csv"
+  xAxis="year"
+  yAxis="co2"
+/>
+
+
 <PlotlyBarChart
   data={[
     {
@@ -89,6 +97,12 @@ Hide code
   yAxis="temperature"
 />
 
+<PlotlyBarChart
+  url="./data.csv"
+  xAxis="year"
+  yAxis="co2"
+/>
+
 <Plotly
   data={[
     {
@@ -109,6 +123,37 @@ Hide code
       ]
     }
   ]}
+  layout={{
+    title: {
+      text: 'Chart built with Plotly'
+    },
+    xaxis: {
+      autorange: true,
+      range: [
+        0.8714733542319749,
+        3.128526645768025
+      ],
+      title: {
+        text: 'x Axis'
+      },
+      type: 'linear'
+    },
+    yaxis: {
+      autorange: true,
+      range: [
+        1.7070063694267517,
+        6.292993630573249
+      ],
+      title: {
+        text: 'y Axis'
+      },
+      type: 'linear'
+    }
+  }}
+/>
+
+<Plotly
+  data="./data.csv"
   layout={{
     title: {
       text: 'Chart built with Plotly'
