@@ -32,3 +32,108 @@ We can add a chart:
   xAxis="year"
   yAxis="co2"
 />
+
+
+<PlotlyLineChart
+  data={[
+    {
+      temperature: -0.41765878,
+      year: '1850'
+    },
+    {
+      temperature: -0.2333498,
+      year: '1851'
+    },
+    {
+      temperature: -0.22939907,
+      year: '1852'
+    },
+    {
+      temperature: -0.27035445,
+      year: '1853'
+    },
+    {
+      temperature: -0.29163003,
+      year: '1854'
+    }
+  ]}
+  xAxis="year"
+  yAxis="temperature"
+/>
+
+Hide code
+<PlotlyBarChart
+  data={[
+    {
+      temperature: -0.41765878,
+      year: '1850'
+    },
+    {
+      temperature: -0.2333498,
+      year: '1851'
+    },
+    {
+      temperature: -0.22939907,
+      year: '1852'
+    },
+    {
+      temperature: -0.27035445,
+      year: '1853'
+    },
+    {
+      temperature: -0.29163003,
+      year: '1854'
+    }
+  ]}
+  xAxis="year"
+  yAxis="temperature"
+/>
+
+<Plotly
+  data={[
+    {
+      marker: {
+        color: 'red'
+      },
+      mode: 'lines+markers',
+      type: 'scatter',
+      x: [
+        1,
+        2,
+        3
+      ],
+      y: [
+        2,
+        6,
+        3
+      ]
+    }
+  ]}
+  layout={{
+    title: {
+      text: 'Chart built with Plotly'
+    },
+    xaxis: {
+      autorange: true,
+      range: [
+        0.8714733542319749,
+        3.128526645768025
+      ],
+      title: {
+        text: 'x Axis'
+      },
+      type: 'linear'
+    },
+    yaxis: {
+      autorange: true,
+      range: [
+        1.7070063694267517,
+        6.292993630573249
+      ],
+      title: {
+        text: 'y Axis'
+      },
+      type: 'linear'
+    }
+  }}
+/>
